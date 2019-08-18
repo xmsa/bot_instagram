@@ -42,3 +42,10 @@ following={elem.get_attribute('href')for elem in taga if 'imsa' in elem.get_attr
 print('$$$$$$$$$$$$$$$$$$$$$$$$$$\n finds followers')
 print(following)
 print('$$$$$$$$$$$$$$$$$$$$$$$$$$$')
+
+
+unfolow=following-followers
+print('These pages do not follow you')
+print(unfolow)
+print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
+
