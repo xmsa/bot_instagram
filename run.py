@@ -66,3 +66,7 @@ while True:
         break
     except TypeError:
         print('Invalid value entered\nTry again')
+
+
+driver.close()
+driver.quit()
