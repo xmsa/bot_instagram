@@ -22,3 +22,13 @@ while True:
         driver.get('https://www.instagram.com/{}'.format(username))
         input('you are login')
         break
+
+
+driver.find_element_by_xpath('//a[@href="/aswfaqefw/followers/"]').send_keys(Keys.ENTER)
+input('**************************\n go to followers \n Press the ENTER')
+taga=driver.find_elements_by_tag_name('a')
+followers={elem.get_attribute('href')for elem in taga if 'imsa' in elem.get_attribute('class')}
+print('##########################\n List followers ')
+print(followers)
+print('##########################')
+
