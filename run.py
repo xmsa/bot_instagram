@@ -49,3 +49,20 @@ print('These pages do not follow you')
 print(unfolow)
 print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
 
+while True:
+    flag=input("Do you want to have the flu? y or n").upper()
+    try:
+        if flag=='Y':  
+            for un in unfolow:
+                driver.get(un)
+                btn=driver.find_element_by_xpath('//button[@class="_5f5mN    -fzfL     _6VtSN     yZn4P   "]').send_keys(Keys.ENTER)
+                btn=driver.find_element_by_xpath('//button[@tabindex="0"]').send_keys(Keys.ENTER)
+                print('{} unfollow'.format(un[26:-1]))
+                time.sleep(2)
+        elif flag=='N':
+            print ('Goodbye')
+        else:
+            raise TypeError
+        break
+    except TypeError:
+        print('Invalid value entered\nTry again')
