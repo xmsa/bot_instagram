@@ -1,2 +1,2 @@
-# unfollow_instagram
+# bot for instagram
 bot for instagram
